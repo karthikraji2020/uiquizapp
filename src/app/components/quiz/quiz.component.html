@@ -1,1 +1,61 @@
-<p>quiz works!</p>
+
+<mat-card class="quiz-card">
+    <div class="row">
+        <div class="col-6">
+            <div class="time-left">
+                <span class="leader">Time</span>
+                <span class="scoreboard">
+                  0:<span *ngIf="timeLeft < 10">0</span>{{ timeLeft }}
+                </span>
+              </div>
+        </div>
+      
+    </div>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      <mat-card-title class="question"></mat-card-title>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        <div class="row">
+            <div class="col-6">
+                <a title="dfsd">
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    bred for hunting.
+                </a>
+            </div>
+         
+            <div class="col-6">
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    bred for hunting.
+                </p>
+            </div>
+         
+            <div class="col-6">
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    bred for hunting.
+                </p>
+            </div>
+         
+            <div class="col-6">
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    bred for hunting.
+                </p>
+            </div>
+         
+        </div>
+     
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  
+
+<button (click)='startTimer()'>Start Timer</button>
+<button (click)='pauseTimer()'>Pause</button>
