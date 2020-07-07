@@ -4,7 +4,7 @@
   
     {
         "questionId": 1,
-        "questionText": "Licensed Frozen Hat",
+        "questionText": "Licensed Frozen Hat ?",
         "options": [
           { "optionValue": "1", "optionText": "Pass the service to the client." },
           { "optionValue": "2", "optionText": "Pass the service to the client." },
@@ -16,28 +16,28 @@
       },
     {
         "questionId": 2,
-        "questionText": "Licensed 2 Hat",
+        "questionText": "Choose the correct HTML element for the largest heading?",
         "options": [
-          { "optionValue": "1", "optionText": "Pass the service to the client." },
-          { "optionValue": "2", "optionText": "Pass the service to the client." },
-          { "optionValue": "3", "optionText": "Pass the service to the client." },
-          { "optionValue": "4", "optionText": "Pass the service to the client." }
+          { "optionValue": "1", "optionText": "<h1>" },
+          { "optionValue": "2", "optionText": "<h2>" },
+          { "optionValue": "3", "optionText": "<h6>" },
+          { "optionValue": "4", "optionText": "<header>" }
         ],
-        "answer": "2",
+        "answer": "1",
         "selectedOption": ""
       },
+   
     {
         "questionId": 3,
-        "questionText": "Licensed 32 Hat",
+        "questionText": "What is the correct HTML element for inserting a line break?",
         "options": [
-          { "optionValue": "1", "optionText": "Pass the service to the client." },
-          { "optionValue": "2", "optionText": "Pass the service to the client." },
-          { "optionValue": "3", "optionText": "Pass the service to the client." },
-          { "optionValue": "4", "optionText": "Pass the service to the client." }
+          { "optionValue": "1", "optionText": "<break>" },
+          { "optionValue": "2", "optionText": "<brk>" },
+          { "optionValue": "3", "optionText": "<lb>" },
+          { "optionValue": "4", "optionText": "<br>" }
         ],
-        "answer": "3",
+        "answer": "4",
         "selectedOption": ""
       }
-      
   
 ]

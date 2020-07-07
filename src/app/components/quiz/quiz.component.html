@@ -12,50 +12,29 @@
       
     </div>
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      <mat-card-title class="question"></mat-card-title>
+      <div mat-card-avatar class="example-header-image">d</div>
+      <mat-card-subtitle id="question-number"> </mat-card-subtitle>
+      <mat-card-title id="question"></mat-card-title>
     </mat-card-header>
     <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 quiz-options" *ngFor="let obj of options; index as i "  (click)="choosedOption(obj)">
                 <a title="dfsd">
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    bred for hunting.
+                                {{obj.optionValue}}
+                                {{obj.optionText}}
                 </a>
             </div>
-         
-            <div class="col-6">
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    bred for hunting.
-                </p>
-            </div>
-         
-            <div class="col-6">
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    bred for hunting.
-                </p>
-            </div>
-         
-            <div class="col-6">
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    bred for hunting.
-                </p>
-            </div>
-         
         </div>
      
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+        <button mat-button>Back</button>
+      <button mat-button (click)='navigateToNextQuestion()'>Next</button>
+      <button mat-button class="btn btn-success" (click)='navigateToNextQuestion()'>Submit</button>
     </mat-card-actions>
   </mat-card>
   
 
-<button (click)='startTimer()'>Start Timer</button>
-<button (click)='pauseTimer()'>Pause</button>
+<!-- <button (click)='startTimer()'>Start Timer</button>
+<button (click)='pauseTimer()'>Pause</button> -->
