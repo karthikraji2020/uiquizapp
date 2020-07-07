@@ -19,18 +19,21 @@ export class QuizComponent implements OnInit,AfterViewInit {
   shuffledQuestions: QuizQuestion[] = [];
   currentQuestionIndex:number=0;
   totalQuestions:number;
+  isLastQuestion:boolean=false;
 
   constructor(private quizService:QuizService) { 
-      this.quizService.getTopics().subscribe((data:[])=>{
-        this.topics=data;
-        console.log(data);
-        if(data) {
-          this.getAllQuestion();
-        }
-
-      });
+    
   }
   ngOnInit() {
+    this.quizService.getTopics().subscribe((data:[])=>{
+      this.topics=data;
+      console.log(data);
+      if(data) {
+        this.getAllQuestion();
+      }
+
+    });
+
    }
    
   getAllQuestion() {
@@ -41,13 +44,15 @@ export class QuizComponent implements OnInit,AfterViewInit {
         this.shuffledQuestions = this.allQuestions.sort(() => Math.random() - .5);
         this.totalQuestions=this.shuffledQuestions.length;
         this.currentQuestionIndex = 0;
+        this.navigateToNextQuestion();
+
       }
     });
   
   }
  
    startQuiz() {
-    this.showQuestion(this.shuffledQuestions[this.currentQuestionIndex]);
+    // this.showQuestion(this.shuffledQuestions[this.currentQuestionIndex]);
   }
 
   navigateToNextQuestion() {
@@ -55,6 +60,7 @@ export class QuizComponent implements OnInit,AfterViewInit {
     this.currentQuestionIndex++
     this.showQuestion(this.shuffledQuestions[this.currentQuestionIndex]);
     this.startTimer();
+
   }
   resetState () {
     this.timeLeft = 60;
@@ -67,6 +73,8 @@ export class QuizComponent implements OnInit,AfterViewInit {
     }
     
   }
+
+
   showQuestion(question) {
 
   if (typeof document.getElementById('question') !== 'undefined' && this.currentQuestionIndex <= this.totalQuestions) {
@@ -75,12 +83,18 @@ export class QuizComponent implements OnInit,AfterViewInit {
     this.options=this.shuffledQuestions[this.currentQuestionIndex]['options'];
     this.currentCorrectAns = this.shuffledQuestions[this.currentQuestionIndex].answer;
   } else {
-
-    // this.navigateToResults();
+    if(this.currentQuestionIndex >= this.totalQuestions)
+    {
+      alert("Quiz Over !!Thank You For Using this Application !!");
+      this.isLastQuestion=true;
+    }
+    this.navigateToResults();
   }
 
   }
-
+  navigateToResults () {
+    
+  }
 
 startTimer() {
 
@@ -88,8 +102,12 @@ startTimer() {
       if(this.timeLeft > 0) {
         this.timeLeft--;
       } else {
-        this.navigateToNextQuestion();
-        this.timeLeft = 60;
+        if(this.currentQuestionIndex >= this.totalQuestions)
+        {
+          this.isLastQuestion=true;
+          this.navigateToNextQuestion();
+          this.timeLeft = 60;
+        }
       }
     },1000)
   }

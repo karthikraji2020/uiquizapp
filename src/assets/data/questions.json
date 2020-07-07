@@ -38,6 +38,127 @@
         ],
         "answer": "4",
         "selectedOption": ""
+      },
+    {
+        "questionId": 4,
+        "questionText": "How do you find the number with the highest value of x and y?",
+        "options": [
+          { "optionValue": "1", "optionText": "Math.ceil(x, y)  " },
+          { "optionValue": "2", "optionText": "ceil(x, y)" },
+          { "optionValue": "3", "optionText": "top(x, y)" },
+          { "optionValue": "4", "optionText": "Math.max(x, y)  " }
+        ],
+        "answer": "4",
+        "selectedOption": ""
+      },
+    {
+        "questionId": 5,
+        "questionText": "How can you detect the client's browser name?",
+        "options": [
+          { "optionValue": "1", "optionText": "browser.name  " },
+          { "optionValue": "2", "optionText": "navigator.appName" },
+          { "optionValue": "3", "optionText": "client.navName" }
+        ],
+        "answer": "2",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 6,
+        "questionText": "What is the correct way to write a JavaScript array?",
+        "options": [
+          { "optionValue": "1", "optionText": "var colors = ['red', 'red', 'blue'])" },
+          { "optionValue": "2", "optionText": "var colors = 'red', 'red', 'blue'" },
+          { "optionValue": "3", "optionText": "var colors = 1 = ('red'), 2 = ('red'), 3 = ('blue')" },
+          { "optionValue": "4", "optionText": "var colors = (1:'red', 2:'red', 3:'blue')" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 7,
+        "questionText": "How do you create a function in JavaScript?",
+        "options": [
+          { "optionValue": "1", "optionText": "function myFunction()  " },
+          { "optionValue": "2", "optionText": "function = myFunction()" },
+          { "optionValue": "3", "optionText": "function:myFunction()" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 8,
+        "questionText": "Is JavaScript case-sensitive?",
+        "options": [
+          { "optionValue": "1", "optionText": "Yes" },
+          { "optionValue": "2", "optionText": "No" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 9,
+        "questionText": "Which configuration file is required to compile the whole TypeScript project?",
+        "options": [
+          { "optionValue": "1", "optionText": " app.json" },
+          { "optionValue": "2", "optionText": " tsconfig.json" }
+        ],
+        "answer": "2",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 9,
+        "questionText": " Constants are block-scoped variables?",
+        "options": [
+          { "optionValue": "1", "optionText": " True" },
+          { "optionValue": "2", "optionText": " false" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 10,
+        "questionText": "The statement 'let' declares a block scope local variable.?",
+        "options": [
+          { "optionValue": "1", "optionText": " True" },
+          { "optionValue": "2", "optionText": " false" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 11,
+        "questionText": "What is a Promise()?",
+        "options": [
+          { "optionValue": "1", "optionText": " Tool for managing asynchronous control flow. A promise represents an operation expected to complete in the future." },
+          { "optionValue": "2", "optionText": "  The opposite of Amateurmise()." },
+          { "optionValue": "3", "optionText": " Something you say, when you want someone to believe you." },
+          { "optionValue": "4", "optionText": "  None of the above." }
+        ],
+        "answer": "1",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 12,
+        "questionText": "What value will this expression return? [...[...'...']].length ",
+        "options": [
+          { "optionValue": "1", "optionText": "3" },
+          { "optionValue": "2", "optionText": "  6" },
+          { "optionValue": "3", "optionText": " 9" },
+          { "optionValue": "4", "optionText": " Error." }
+        ],
+        "answer": "2",
+        "selectedOption": ""
+      },
+      {
+        "questionId": 13,
+        "questionText": "let point = [1,3], segment = [point,[5,5]], triangle = [...segment,[1,8]];? ",
+        "options": [
+          { "optionValue": "1", "optionText": " [1,3,5,5,1,8]" },
+          { "optionValue": "2", "optionText": "   [ [1,3], [5,5], [1,8] ]" },
+          { "optionValue": "3", "optionText": "  23" }
+        ],
+        "answer": "1",
+        "selectedOption": ""
       }
   
 ]

@@ -4,11 +4,16 @@
 }
 .quiz-options{
   padding: 0.5rem 1rem;
-  border:1px solid black;
+  /* border:1px solid #ccc; */
   margin:2px 0;
+  display: inline-block;
+  border-radius: .5rem;
+  width: 100%;
 }
-
-/* .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+.options-wrapper{
+  min-height: 7rem;
+}
+.example-header-image {
+  /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
   background-size: cover;
-}  */
+} 

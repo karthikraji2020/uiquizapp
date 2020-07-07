@@ -2,3 +2,100 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.navbar-nav .nav-link ,.navbar-brand{
+    color: #5f0ff5;
+  }
+  .navbar .nav-item:hover:not(.active){
+    background: rgb(255, 255, 255);
+    color: #5f0ff5; 
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+  .navbar .nav-item.active:hover {
+    color: #5f0ff5; 
+  }
+  .navbar .nav-item.active {
+  /*   background: #fff; */
+    border: none;
+    border-bottom: 3px solid blue;
+    transition: 0.8s;
+    cursor: pointer !important; 
+  }
+a {
+    font-weight: 500;
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  .btn:hover{
+    cursor:pointer !important;
+  } 
+footer ,nav{
+    /* background-image: linear-gradient(to left, #8d5beb, #5f0ff5); */
+    color: black !important;
+    }
+    
+    .page-footer .footer-links {
+    text-align: right;
+    }
+    /* nav{
+    } */
+    @media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+    text-align: center;
+    }
+    }
+  
+    /* .social{
+    } */
+    .social .fa {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:20%;
+    /* border:3px solid rgb(70, 72, 82); */
+    box-shadow: 1px 9px 9px #161616, inset 2px 10px 10px rgb(145, 146, 146);
+
+    /* background:#595d7c;  */
+    }
+
+    .social .fa:hover {
+    cursor: pointer;
+    transition:.7s;
+    transform: scale(.91); 
+    box-shadow: 1px 6px 6px #776e91, inset 2px 8px 8px rgb(146, 145, 145);
+
+    /* box-shadow: 1px 9px 9px #776e91, inset 2px 10px 10px rgb(145, 146, 146); */
+    }
+
+    .fa-google {
+    color: #dd4b39;
+    background: white;
+    }
+    .fa-github {
+    color: white;
+    background: #161616;
+    }
+    .fa-codepen {
+    color: white;
+    background: #161616;
+    }
+
+    
+    .fa-google {
+    background-color: #dd4b39;
+    color: white;
+    }
+    .fa-instagram{
+    background: #fe4164;
+    color: white;
+    }
+    .fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+    }
