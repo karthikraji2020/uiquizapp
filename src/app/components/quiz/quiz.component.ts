@@ -12,6 +12,7 @@ export class QuizComponent implements OnInit,AfterViewInit {
   topics:[]=[];
   allQuestions: QuizQuestion[] = [];
   timeLeft: number = 60;
+  currentCorrectAns: string;
   interval;
   options =[];
 
@@ -60,12 +61,11 @@ export class QuizComponent implements OnInit,AfterViewInit {
   }
   choosedOption(opt) {
     console.log(opt.optionValue)
-
-    if(opt.optionValue){
-
+    if(opt.optionValue===this.currentCorrectAns){
+      
+      //  document.querySelector('.quiz-options')[Number(opt.optionValue)].style.border = "3px solid blue";
     }
     
-
   }
   showQuestion(question) {
 
@@ -73,6 +73,7 @@ export class QuizComponent implements OnInit,AfterViewInit {
     document.getElementById('question').innerHTML = this.shuffledQuestions[this.currentQuestionIndex]['questionText'];
     // document.getElementById('question').style.border = "3px solid blue";
     this.options=this.shuffledQuestions[this.currentQuestionIndex]['options'];
+    this.currentCorrectAns = this.shuffledQuestions[this.currentQuestionIndex].answer;
   } else {
 
     // this.navigateToResults();

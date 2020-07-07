@@ -19,9 +19,9 @@
     <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content>
         <div class="row">
-            <div class="col-6 quiz-options" *ngFor="let obj of options; index as i "  (click)="choosedOption(obj)">
-                <a title="dfsd">
-                                {{obj.optionValue}}
+            <div class="col-6 quiz-options" *ngFor="let obj of options; index as i"  (click)="choosedOption(obj)">
+                <a class="">
+                                {{obj.optionValue}} )
                                 {{obj.optionText}}
                 </a>
             </div>
@@ -35,6 +35,3 @@
     </mat-card-actions>
   </mat-card>
   
-
-<!-- <button (click)='startTimer()'>Start Timer</button>
-<button (click)='pauseTimer()'>Pause</button> -->
